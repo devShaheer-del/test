@@ -43,6 +43,10 @@ app.get('/health', (req, res) => {
     res.status(200).json({ status: 'ok' });
 });
 
+app.get("/",function(req,res){
+    res.send("Hello world");
+})
+
 
 app.post('/Student-create', async (req, res) => {
     try {
